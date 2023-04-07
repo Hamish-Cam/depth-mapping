@@ -1,11 +1,14 @@
 # A machine learning approach for remote peat depth mapping: a case study in the East Anglian Fens
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
- <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 
-For replication of results, the required datasets can be downloaded from [here](https://doi.org/10.5281/zenodo.7808203). All code within this repository is written in Python and is formatted in Jupyter Notebooks. This allows easy annotation and allows researchers to make their own changes easily. The notebooks should be run in the order: 
-  1. [preprocessing.ipynb]() - downloads additional datasets from Google Earth Engine and samples all predictors at field data point locations to make the tabular dataset required for further modelling. 
-  2. [modelling.ipynb]() - carries out the feature selection process and applies a random forest and neural network model for the task of peat thickness prediction. 
+For replication of results, the required datasets can be downloaded from [here](https://doi.org/10.5281/zenodo.7808203). All code within this repository is written in Python and is formatted in Jupyter Notebooks. This allows easy annotation and allows researchers to make their own changes easily. We recommend cloning the repo and running scripts locally. 
+
+The notebooks should be run in the following order: 
+  1. [preprocessing.ipynb](https://github.com/Hamish-Cam/depth-mapping/blob/main/1.Preprocessing/preprocessing.ipynb) - downloads additional datasets from Google Earth Engine and samples all predictors at field data point locations to make the tabular dataset required for further modelling. 
+  2. [modelling.ipynb](https://github.com/Hamish-Cam/depth-mapping/blob/main/2.Modelling/modelling.ipynb) - carries out the feature selection process and applies a random forest and neural network model for the task of peat thickness prediction. 
+
+Various extra notebooks are provided that show other methodology employed. In particular, the [LPS processing.ipynb](https://github.com/Hamish-Cam/depth-mapping/blob/main/Extra%20Notebooks/LPS%20processing.ipynb) describes the algorithm used to translate the Lowland Peat Survey soil horizon data into labelled peat thickness data.
   
 
 ## Abstract
